@@ -18,9 +18,9 @@ env:
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
-    # outputs:
-    # # https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idoutputs
-    #   tags: ${{ steps.meta.outputs.tags }}
+    outputs:
+    # https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idoutputs
+      tags: ${{ steps.meta.outputs.tags }}
     # Sets the permissions granted to the `GITHUB_TOKEN` for the actions in this job.
     permissions:
       contents: read
